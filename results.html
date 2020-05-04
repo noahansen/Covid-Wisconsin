@@ -367,5 +367,28 @@ AAAAAAAtaWxzdAAAACWpdG9vAAAAHWRhdGEAAAABAAAAAExhdmY1Ny44My4xMDA=
         The animation is useful for seeing the relationship over time in all Wisconsin counties as it has clear labels
         and clear colors denoting rises and falls in death rates.
     </p>
+    
+    <h2>How does population density relate to the community spread of the virus?</h2>
+        <img src="regression1.svg" width=600>
+        <br>
+        <img src="regression.svg" width=600>
+        <p> 
+            The relationship shown in these plots illustrates how much population density may be affecting the spread of the virus.
+            Wisconsin is fortunate in that many of its counties have little to no cases, so counties with less than 3 cases were
+            excluded in attempt to keep the data relevant to locations where community spread is more likely to be happening. Its
+            worth noting that most of the excluded counties did not have dense populations. The first plot gives a better idea of
+            the relationship because Milkwaukee, the outlier, is excluded from the data. The second plot shows how much milwaukee
+            changes the model. For every 100 more people per square mile, the first model predicts an additional .013% of the
+            population would be infected. This suggests that the more densely populated the area, the more social distancing should
+            be put into effect to counteract the trend.
+            Out of the many non-obvious relationships between variables, we found this relationship to have the best explained
+            variance score. It makes sense that it is hard to track down the cause of variance for covid-19 data because there are so
+            many paramaters that come into play in spreading a virus. The traing group almost always overfit or underfit the data
+            with the explained variance score for the first plot being 0.46 compared to 0.52 for the test. With milwaukee included,
+            the data was always overfit or underfit, suggesting that more densely populated counties outside of wisconsin would have
+            to be considered to better model the trend past 1000 people per square mile.
+        </p>
+        
+    
 </body>
 </html>
